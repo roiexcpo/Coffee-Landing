@@ -1,0 +1,1505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth; /* Включает плавный скролл по всему сайту! */
+}
+
+a, button {
+    cursor: pointer;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../font-2/static/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../font-2/static/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../font-2/static/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Clicker Script";
+    src: url("../fonts/ClickerScript-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 93px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    font-size: 14px;
+}
+
+.logo {
+    font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.sign {
+    display: flex;
+    gap: 35px;
+}
+
+.sign__in {
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+.sign__up {
+    box-shadow: 0 1px 8px #F9C06A;
+}
+
+.btn {
+    font-size: 14px;
+    color: #1E1E1E;
+    border: none;
+    background: #F9C06A;
+    border-radius: 24px;
+    padding: 15px 30px;
+    font-family: "Playfair Display", serif;
+}
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.55) 45%,
+            rgba(0, 0, 0, 0.05) 100%
+        ),
+        url("../image/1.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0 0 0 93px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__content {
+    padding: 20px 0 0 0;
+}
+
+.hero__title {
+   font-size: 22px;
+   font-weight: 500;
+}
+
+.hero__bigtitle {
+    font-size: 220px;
+    font-family: "Clicker Script", cursive;
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    padding: 0 0 20px 0;
+}
+
+.hero__btn-txt {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.hero__button {
+    box-shadow: 0 1px 8px #F9C06A;
+}
+
+.best {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+}
+
+.best__content {
+    display: flex;
+    justify-content: center;
+}
+
+.best__txt {
+    display: flex;
+    flex-direction: column;
+    gap:29px;
+    padding: 150px 0 0 93px;
+}
+
+.best__img {
+    padding: 92px 93px 0 0;
+}
+
+.title {
+    color: #603809;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #707070;
+    font-size: 20px;
+} 
+
+.best__button {
+    width: fit-content;
+    font-weight: 900;
+}
+
+.img__best-2 {
+    position: absolute;
+    top: 400px;
+}
+
+.enjoy__content {
+    padding: 82px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+}
+
+.coffee__block {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 32px 0 0 0;
+}
+
+.coffee-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF9F1;
+    border: 1px solid #F9C06A;
+    border-top: none;
+}
+
+.coffee__title {
+    padding: 14px 0 6px 0;
+    color: #603809;
+    font-weight: 900;
+}
+
+.coffee__subtitle {
+    padding: 6px 0 0px 0;
+    color: #1E1E1E;
+}
+
+.coffee__price {
+    padding: 6px 0 42px 0;
+    font-weight: 900;
+    color: #603809;
+}
+
+.hero__btn-txt-2 {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.coffee__btn {
+    position: absolute;
+    bottom: -25px;
+}
+
+.coffee__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-8 {
+    position: absolute;
+    right: 0px;
+    top: 1100px;
+}
+
+.different__txt {
+    padding: 82px 0 0 0;
+    gap: 16px;
+    text-align: center;
+}
+
+.different {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.different__block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 32px 0 0 0;
+}
+.different-block-vip {
+    background: #FFEED8;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.different-block {
+    background: #FFF9F1;
+    min-width: 280px;
+    border: 1px solid #F9C06A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.different-block,
+.different-block-vip {
+    text-align: center;
+}
+
+.different__img {
+    padding-top: 36px;
+}
+
+.different__title {
+    padding-top: 25px;
+    font-size: 28px;
+    font-weight: 900;
+    color:#603809
+}
+
+.different__subtitle-t {
+    padding: 16px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.different__subtitle {
+    padding-top: 8px;
+    padding-bottom: 36px;
+    color:#707070;
+    font-size: 20px;
+}
+
+.different__txt-2 {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.different__subtitle-2 {
+    font-size: 20px;
+    color:#707070;
+}
+
+.different__title-2 {
+    color:#603809;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 24px;
+}
+
+.different__btn {
+    min-width: 124px;
+    margin-bottom: 82px;
+}
+
+.btn-txt {
+    font-weight: 900;
+}
+
+.amazing {
+    min-height: 574px;
+    max-width: 100%;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(68, 40, 8, 0.85) 100%,
+            rgba(68, 40, 8, 0.65) 100%,
+            rgba(68, 40, 8, 0.25) 100%
+        ),
+        url("../image/15.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+}
+
+.amazing__title {
+    font-size:54px;
+    font-weight: 900;
+    color: white
+}
+
+.amazing__subtitle {
+    font-size: 20px;
+    color: white;
+}
+
+.btn-amazing {
+    font-weight: 900;
+}
+
+.amazing__btn {
+    width: fit-content;
+}
+
+.amazing-hero {
+    padding: 135px 0 0 93px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.img-amazing {
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 100;
+    padding: 60px 160px 0 0;
+}
+
+.img2-amazing {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper__txt {
+    padding-top: 82px;
+}
+
+.swiper__subtitle {
+    padding: 16px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Контейнер всей секции */
+.testimonial-section {
+    position: relative;
+    max-width: 980px;
+    margin: 45px auto;
+}
+
+/* Сам слайдер Swiper */
+.testimonialSwiper {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 82px;
+ /* 🛠 [МОЖНО МЕНЯТЬ] Отступы по бокам, чтобы стрелки не наезжали на карточку */
+}
+
+/* 🛑 [НЕ ТРОГАТЬ] Обязательное выравнивание слайдов по высоте */
+.testimonialSwiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* КАРТОЧКА ОТЗЫВА */
+.testimonial-card {
+    position: relative;
+    max-width: 980px;
+  width: 100%;
+  background: #FFF9F1;       /* 🛠 [МОЖНО МЕНЯТЬ] Цвет фона карточки (подставь свой цвет) */
+  border: 1px solid #F9C06A;       /* 🛠 [МОЖНО МЕНЯТЬ] Скругление углов карточки */
+  padding: 40px 60px 30px;   /* 🛠 [МОЖНО МЕНЯТЬ] Внутренние отступы */
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 🛠 [МОЖНО МЕНЯТЬ] Тень */
+}
+
+/* Кавычка в углу */
+.testimonial-card__quote {
+  font-size: 220px;            /* 🛠 [МОЖНО МЕНЯТЬ] Размер кавычки */
+  font-weight: 900;
+  color: #603809;             /* 🛠 [МОЖНО МЕНЯТЬ] Цвет кавычки */
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+/* Текст отзыва */
+.testimonial-card__text {
+    font-family: "Playfair Display", serif;
+    padding: 100px 30px 0 30px;
+  font-size: 18px;                                /* 🛠 [МОЖНО МЕНЯТЬ] Размер текста */
+  color: #707070;                                 /* 🛠 [МОЖНО МЕНЯТЬ] Цвет текста */
+}
+
+/* Имя автора */
+.testimonial-card__name {
+  font-size: 32px;   /* 🛠 [МОЖНО МЕНЯТЬ] Размер имени */
+  font-weight: 900;
+  color: #603809;    /* 🛠 [МОЖНО МЕНЯТЬ] Цвет имени */
+  padding-top: 28px;
+}
+
+/* Должность */
+.testimonial-card__role {
+  font-size: 20px;   /* 🛠 [МОЖНО МЕНЯТЬ] Размер должности */
+  color: #707070;    /* 🛠 [МОЖНО МЕНЯТЬ] Цвет должности */
+  padding-top: 4px;
+  padding-bottom: 45px;
+}
+
+/* Фотография (Аватарка) */
+.testimonial-card__avatar {
+  width: 112px;       /* 🛠 [МОЖНО МЕНЯТЬ] Ширина фото */
+  height: 112px;      /* 🛠 [МОЖНО МЕНЯТЬ] Высота фото */
+  border-radius: 16px; /* 🛠 [МОЖНО МЕНЯТЬ] Скругление аватарки (12px = квадрат со скруглением, 50% = круг) */
+  overflow: hidden;
+    position: absolute;
+    bottom: -55px;
+    left: 430px;
+}
+
+.testimonial-card__avatar-1 {
+  width: 112px;       /* 🛠 [МОЖНО МЕНЯТЬ] Ширина фото */
+  height: 116px;      /* 🛠 [МОЖНО МЕНЯТЬ] Высота фото */
+  border-radius: 16px; /* 🛠 [МОЖНО МЕНЯТЬ] Скругление аватарки (12px = квадрат со скруглением, 50% = круг) */
+  overflow: hidden;
+    position: absolute;
+    bottom: -55px;
+    left: 420px;
+    width: fit-content;
+}
+
+.testimonial-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========================================================
+   ЗОЛОТЫЕ КВАДРАТНЫЕ СТРЕЛКИ (НАВИГАЦИЯ)
+   ======================================================== */
+.testimonialSwiper .swiper-button-next,
+.testimonialSwiper .swiper-button-prev {
+  background: #F9C06A;    /* 🛠 [МОЖНО МЕНЯТЬ] Цвет самих квадратных кнопок */
+  width: 82px;            /* 🛠 [МОЖНО МЕНЯТЬ] Ширина кнопки */
+  height: 82px;           /* 🛠 [МОЖНО МЕНЯТЬ] Высота кнопки */
+  border-radius: 15px;    /* 🛠 [МОЖНО МЕНЯТЬ] Скругление углов кнопок */
+           /* 🛠 [МОЖНО МЕНЯТЬ] Цвет стрелочки внутри */
+  transition: 0.3s ease;
+}
+
+
+/* Эффект при наведении мышкой на стрелки */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Позиция стрелок: слева и справа от карточки */
+.swiper-button-prev {
+    position: absolute;
+  left: -40px;
+}
+
+.swiper-button-next {
+    position: absolute;
+  right: -40px;
+}
+
+/* 1. Выключаем встроенные синие стрелки Swiper */
+.testimonialSwiper .swiper-button-next::after,
+.testimonialSwiper .swiper-button-prev::after {
+  display: none !important;
+}
+
+/* 2. Центруем твою картинку-стрелку внутри золотой кнопки */
+.testimonialSwiper .swiper-button-next,
+.testimonialSwiper .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background: #F9C06A;
+  width: 82px;
+  height: 82px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 45%;                 /* Ровно по центру карточки */
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Убираем синие стрелки */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;             /* 🛑 На всю ширину монитора! */
+  margin: 100px 0;         /* Отступы сверху и снизу */
+}
+
+.img-16 {
+  position: absolute;
+  right: 0;
+    top: -110px;
+  z-index: 100;
+}
+
+.img-17 {
+    position: absolute;
+    left: 0;
+    top: 290px;
+    z-index: 100;
+}
+
+.form {
+    min-height: 374px;
+    max-width: 100%;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(68, 40, 8, 0.85) 100%,
+            rgba(68, 40, 8, 0.65) 100%,
+            rgba(68, 40, 8, 0.25) 100%
+        ),
+        url("../image/18.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.form-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    font-size:54px;
+    font-weight: 900;
+    color: white;
+    padding: 80px 0 16px 0;
+}
+
+.form__subtitle {
+    font-size: 20px;
+    color: white;
+}
+
+.form-form {
+    display: flex;
+    flex-direction: row;
+    padding-top: 26px;
+}
+
+.input {
+    width: 505px;
+    height: 66px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Playfair Display", serif;
+    padding-left: 26px; 
+    font-size: 20px;
+    border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.suscribe {
+    color:#603809;
+    background: #F9C06A;
+    border: none;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;;
+    width: 137px;
+    height: 66px;
+    border-radius: 4px;
+}
+
+.form-footer {
+    position: relative;
+}
+
+.img-19 {
+    position: absolute;
+    bottom: 375px;
+    z-index: 100;
+}
+
+.img-20 {
+    position: absolute;
+    right: 0;
+    bottom: 375px;
+    z-index: 100;
+}
+
+.img-21 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    vertical-align: bottom;  /* Прижимает изображение строго к нижней границе */
+    z-index: 99;
+    pointer-events: none;    /* Чтобы картинка не мешала кликам по ссылкам */
+}
+
+.footer {
+    max-height: 492px;
+    height: 100%;
+    max-width: 100%;
+    background: linear-gradient(to top, #74440c, #442808);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 492px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 162px 66px 0 93px;
+    gap: 20px;
+    z-index: 100;
+}
+
+.footer__title {
+    font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    font-size: 54px;
+    color: white;
+}
+
+.footer__subtitle {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer__img {
+    width: 154px;
+    height: 24px;
+}
+
+.footers {
+    display: flex;
+    gap: 66px;
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 162px; 
+    z-index: 100;
+}
+
+.footer__title-2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+    padding-bottom: 55px;
+}
+
+.footer__subtitle-2 {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 25px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1275px)  {
+    .header {
+        padding: 18px 63px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav {
+        font-size: 12px;
+        gap: 28px;
+    }
+
+    .sign__in, .sign__up {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
+
+    .hero {
+        padding: 0 0 0 63px;
+    }
+
+    .hero__title {
+        font-size: 18px;
+    }
+
+    .hero__bigtitle {
+        font-size: 180px;
+    }
+
+    .hero__subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+    font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }   
+
+    .best__content {
+        padding: 0
+    }
+
+    .img__best {
+        width: 350px;
+    }
+
+    .img__best-2 {
+        width: 150px;
+        top: 500px;
+    }
+
+    .coffee__block {
+        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .coffee__block-3, .coffee__block-4{
+        padding-top: 30px;
+    }
+
+    .coffee__block-1, .coffee__block-2, .coffee__block-3, .coffee__block-4{ 
+        width: 280px;
+    }
+
+    .coffee__btn-1 {
+        bottom: -25px;
+    }
+
+    .img-8{
+        width: 150px;
+        top: 1000px;
+    }
+
+    .different__block {
+        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        
+    }
+
+    .different-block, .different-block-vip {
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .different__img {
+        padding-top: 36px;
+        width: 70px;
+    }
+    .different__subtitle-t{
+        font-size: 15px;
+    }
+
+    .different__title {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .different__subtitle {
+        font-size: 16px;
+    }
+
+    .different__subtitle-2 {
+    font-size: 15px;
+    }
+
+    .different__title-2 {
+    color:#603809;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 14px;
+    }
+
+    .amazing__title {
+        font-size: 34px;
+    }
+
+    .amazing__subtitle {
+        font-size: 15px;
+    }
+
+    .img-amazing {
+        width: 385px;
+        top: 130px;
+        right: -110px;
+    }
+    
+    .img2-amazing {
+        width: 450px;
+    }
+
+    .img-16 {
+        width: 150px;
+    }
+
+    .img-17 {
+        width: 150px;
+    }
+
+    .swiper__subtitle {
+        padding: 10px 0 0 0;
+    }
+    .different__subtitle-t {
+        padding: 10px 0 0 0;
+    }
+    .enjoy__content {
+        gap: 10px;
+    }
+    .best__txt {
+        gap: 16px;
+    }
+
+    .testimonial-card {
+        padding: 0 20px 0 20px;
+    }
+
+    .testimonial-card__quote {
+        font-size: 160px;
+    }
+    
+    .testimonial-section {
+        width: 620px;
+
+    }
+
+    .testimonial-card__text {
+        font-size: 14px;
+    }
+
+    .testimonial-card__name {
+        font-size: 24px;
+    }
+
+    .testimonial-card__role {
+        font-size: 17px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 60px;
+        height: 60px;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: -30px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: -30px;
+    }
+
+    .testimonial-card__avatar {
+        width: 65px;       /* 🛠 [МОЖНО МЕНЯТЬ] Ширина фото */
+        height: 65px;      /* 🛠 [МОЖНО МЕНЯТЬ] Высота фото */
+        bottom: -35px;
+        left: 275px;
+    }
+
+    .testimonial-card__avatar-1 {
+        max-width: 80px;
+        max-height: 80px;
+        bottom: -45px;
+        left: 270px;
+    }
+
+    .testimonial-card__avatar img,
+    .testimonial-card__avatar-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .testimonial-card__avatar {
+        border-radius: 10px;
+    }
+
+    .form__title {
+        font-size: 34px;
+        padding: 80px 0 10px 0;
+    }
+
+    .form__subtitle {
+        font-size: 14px;
+    }
+
+    .img-19, .img-20 {
+        width: 180px;
+        bottom: 420px;
+    }
+
+    .input {
+        font-size: 12px;
+        width: 320px;
+        height: 40px;
+    }
+
+    .suscribe {
+        font-size: 16px;
+        height: 40px;
+        width: 90px;
+    }
+
+    .footer-1 {
+        padding: 102px 46px 0 73px;
+    }
+
+    .footer__title {
+        font-size: 34px;
+    }
+
+    .footer__subtitle {
+        font-size: 12px;
+    }
+
+    .footer__title-2 {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    .footer__subtitle-2 {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .footer-2 {
+        padding-top: 110px;
+    }
+
+    .testimonial-wrapper {
+        margin: 20px 0 80px 0; /* Было 100px сверху — уменьшили до 20px */
+    }
+
+    .footer-1 {
+        padding: 102px 66px 0 30px;
+    }
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% ширины экрана */
+  height: 100vh;/* 100% высоты экрана */
+  background:#311d06;
+  z-index: 999;/* Чтобы перекрывало весь сайт */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+/* ПЛАВНОЕ ПОЯВЛЕНИЕ (вместо резкого display: none) */
+  opacity: 0;
+  pointer-events: none; /* Запрещаем клики по невидимым ссылкам */
+  transition: opacity 0.4s ease;
+}
+
+.navigation a {
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+/* КОГДА ДОБАВЛЕН КЛАСС .active — МЕНЮ ПРОЯВЛЯЕТСЯ */
+.navigation.active {
+    opacity: 1;
+    pointer-events: all; /* Включаем клики обратно */
+}
+
+.burger-btn {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  z-index: 1000;
+
+  width: 28px;
+  gap: 6px;
+  background: transparent;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-btn span {
+  display: none;
+  height: 2px;
+  width: 100%;
+  
+  background: white;
+  border-radius: 2px;
+  /* transition ОБЯЗАТЕЛЕН, чтобы палочки крутились плавно! */
+  transition: all 0.3s ease; 
+}
+
+/* ========================================================
+   ТРАНСФОРМАЦИЯ В КРЕСТИК (когда у кнопки появляется класс .active)
+   ======================================================== */
+
+/* Верхняя линия: опускается в центр и поворачивается на 45 градусов */
+.burger-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+/* Средняя линия: просто исчезает (прозрачность 0) */
+.burger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+/* Нижняя линия: поднимается в центр и поворачивается на -45 градусов */
+.burger-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .header__btn--menu{
+    display: none;
+  }
+  .burger-btn span {
+  display: block;
+}
+    .nav, .sign {
+        display: none;
+    }
+
+    .header {
+        padding: 20px 30px;
+    }
+
+    .hero {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        padding: 0 40px;
+    }
+    
+    .hero__title {
+        font-size: 16px;
+    }
+
+    .hero__bigtitle {
+        font-size: 120px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+    }
+
+    .img__best-2 {
+  
+    }
+
+    .img__best {
+
+    }
+
+    .best__txt {
+        padding: 80px 20px 0 20px;
+        display: flex;
+        flex-direction: column;     /* Чтобы заголовок, текст и кнопка шли строго друг под другом */
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .best__subtitle br {
+        display: none;
+    }
+
+    .hero__subtitle br {
+        display: none;
+    }
+
+    .coffee__block {
+        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .coffee__block-1, .coffee__block-2, .coffee__block-3, .coffee__block-4{ 
+        width: 160px;
+    }
+
+    .coffee__btn-1 {
+        bottom: -25px;
+    }
+
+    .enjoy__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        gap:5px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .different-block, .different-block-vip {
+        min-width: 160px;
+        width: 100%;
+        
+    }
+
+    .different__title {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .different__subtitle {
+        font-size: 14px;
+    }
+
+    .different__txt-2 {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .amazing {
+        justify-content: center; /* Центруем внутренний контент секции */
+    }
+
+    .amazing-hero {
+        padding: 100px 0 0 0;
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .img-amazing {
+        display: none; !important
+    }
+
+    .img2-amazing {
+        position: absolute;
+        width: 275px;
+    }
+
+    .best__img,
+    .img__best,
+    .img__best-2 {
+        display: none !important;
+    }
+
+    .swiper {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .img-16, .img-17 {
+        display: none;
+    }
+
+    .testimonial-card {
+        padding: 0 20px 0 20px;
+    }
+
+    .testimonial-card__quote {
+        font-size: 120px;
+        padding-top: 10px;
+    }
+    
+    .testimonial-section {
+        width: 370px;
+    }
+
+    .testimonial-card__text {
+        font-size: 13px;
+        padding: 60px 20px 0px 20px;
+    }
+
+    .testimonial-card__name {
+        font-size: 18px;
+    }
+
+    .testimonial-card__role {
+        font-size: 14px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 45px;
+        height: 45px;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 0px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: 0px;
+    }
+
+    .testimonial-card__avatar {
+        width: 65px;       /* 🛠 [МОЖНО МЕНЯТЬ] Ширина фото */
+        height: 65px;      /* 🛠 [МОЖНО МЕНЯТЬ] Высота фото */
+        bottom: -35px;
+        left: 133px;
+    }
+
+    .testimonial-card__avatar-1 {
+        max-width: 80px;
+        max-height: 80px;
+        bottom: -45px;
+        left: 120px;
+    }
+
+    .testimonial-card__avatar img,
+    .testimonial-card__avatar-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .testimonial-card__avatar {
+        border-radius: 10px;
+    }
+
+    .form__title {
+        font-size: 25px;
+    }
+
+    .form__subtitle {
+        font-size: 14px;
+    }
+
+    .img-19, .img-20 {
+        width: 80px;
+        bottom: 690px;
+    }
+
+    .form {
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .input {
+        font-size: 12px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .suscribe {
+        font-size: 14px;
+        height: 40px;
+        width: 90px;
+    }
+
+    .form {
+        min-height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .form__title {
+        font-size: 26px;
+        padding: 0 0 10px 0;
+    }
+
+    .form__subtitle {
+        font-size: 14px;
+    }
+
+    .form-form {
+        width: 100%;
+        max-width: 340px;
+        flex-direction: row; /* Оставляем инпут и кнопку в одну строку */
+        justify-content: center;
+        gap: 0;
+    }
+
+    .input {
+        width: 100%;
+        height: 46px;
+        font-size: 13px;
+        padding-left: 15px;
+    }
+
+    .suscribe {
+        width: 100px;
+        height: 46px;
+        font-size: 13px;
+    }
+
+    /* ==========================================
+       2. ОСНОВНОЙ ФУТЕР (FOOTER)
+       ========================================== */
+    .footer {
+        height: auto;            /* 🛑 Снимаем фиксированную высоту 492px! */
+        max-height: none;
+        flex-direction: column;   /* Перестраиваем в столбик */
+        align-items: center;
+        text-align: center;
+        padding: 60px 20px 80px 20px;
+        gap: 40px;
+    }
+
+    /* Блок 1: Логотип Bean Scene + описание */
+    .footer-1 {
+        padding: 0;              /* 🛑 Убираем огромный padding-top: 162px! */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer__title {
+        font-size: 42px;
+    }
+
+    .footer__subtitle {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .footer__subtitle br {
+        display: none;          /* Убираем жесткие переносы строк <br> */
+    }
+
+    /* Блок 2: Сетка колонок (About, Company, Contact Us) */
+    .footers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Ставим колонки по 2 в ряд */
+        gap: 30px 20px;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .footer-2 {
+        padding-top: 0;          /* 🛑 Убираем padding-top: 162px! */
+        align-items: center;
+    }
+
+    /* Последняя колонка Contact Us на всю ширину */
+    .footer-2:last-child {
+        grid-column: span 2;
+    }
+
+    .footer__title-2 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    .footer__subtitle-2 {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+
+     .img-8{
+        display: none;
+    }
+
+}
+
+[data-aos] {
+  /* cubic-bezier создает эффект дорогие пружинящие анимации Apple */
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
