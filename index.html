@@ -228,10 +228,13 @@
             <p class="form__title" data-aos="fade-left" data-aos-duration="800">Subscribe to get the Latest News</p>
             <p class="form__subtitle" data-aos="fade-right" data-aos-duration="800">Don't miss out on our latest news, updates, tips and special offers</p>
         </div>
-            <div class="form-form">
-                <input type="email" placeholder="Enter your mail" class="input">
-                <button class="suscribe">Suscribe</button>
-            </div>
+            <form class="form-form" id="tgForm">
+            <input type="text" id="phone" placeholder="+7 (___) ___-__-__" class="input" required>
+            <button class="suscribe" type="submit" id="submitBtn">Subscribe</button>
+
+            <!-- Текст статуса отправки -->
+            <p id="formStatus" class="form-status"></p>
+        </form>
     </div>
     <img src="image/19.png" class="img-19">
     <img src="image/20.png" class="img-20">
@@ -267,6 +270,7 @@
     <img src="image/2121.png" class="img-21">
     </div>
 </footer>
+<script src="https://unpkg.com/imask"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>

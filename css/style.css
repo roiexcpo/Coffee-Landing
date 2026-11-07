@@ -10,7 +10,7 @@ html, body {
   overflow-x: hidden;
 }
 
-body {
+body { 
   font-family: "Playfair Display", serif;
 }
 
@@ -54,6 +54,21 @@ a, button {
     font-style: normal;
     font-display: swap;
 }
+
+.form-form {
+  position: relative;
+}
+
+.form-status {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 
 .header {
     position: absolute;
